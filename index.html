@@ -3,34 +3,100 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Game Dev Starter Guide</title>
-  <style>
-    body {
-      max-width: 720px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-      font: 1.1rem/1.6 system-ui, sans-serif;
-      color: #f3f4f6;
-      background: #171923;
-    }
-    h1, h2 { color: #8be9fd; }
-    a { color: #bd93f9; }
-  </style>
+  <meta name="description" content="A beginner-friendly guide to learning game development, tools, and resources.">
+  <title>Level Up Lab | Beginner Game Development</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Game Dev Starter Guide</h1>
-  <p>A beginner-friendly introduction to making games.</p>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="brand-row">
+      <a class="brand" href="#home" aria-label="Level Up Lab home">
+        <span class="brand-mark" aria-hidden="true">⬆</span>
+        <span>Level Up Lab</span>
+      </a>
+      <p class="tagline">Beginner game development</p>
+    </div>
+    <nav class="primary-nav" aria-label="Main navigation">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul id="nav-links">
+        <li><a href="#home" aria-current="page">Home</a></li>
+        <li><a href="#learn">Learn</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h2>Start with an idea</h2>
-  <p>Choose a small game concept, such as a platformer, puzzle, or simple arcade game.
-     Keep the first version small so you can finish it.</p>
+  <div class="page-layout" id="home">
+    <aside class="sidebar" aria-label="Quick links">
+      <p class="sidebar-heading">Your starting point</p>
+      <ul>
+        <li><a href="#learn">Quick links</a></li>
+        <li><a href="#learn">Start here</a></li>
+        <li><a href="#glossary">Glossary</a></li>
+      </ul>
+      <div class="sidebar-note">
+        <span class="note-icon" aria-hidden="true">✦</span>
+        <p>Small steps make great games.</p>
+      </div>
+    </aside>
 
-  <h2>Explore game-making tools</h2>
-  <p>Look into a game engine that fits your goals, then try a beginner tutorial and
-     make a tiny playable prototype.</p>
+    <main id="main-content">
+      <section class="welcome" aria-labelledby="welcome-title">
+        <p class="eyebrow">Your first level starts here</p>
+        <h1 id="welcome-title">Welcome, game maker!</h1>
+        <p>Learn the building blocks of game development, find beginner-friendly tools, and start creating at your own pace.</p>
+        <a class="button" href="#learn">Explore the learning path <span aria-hidden="true">→</span></a>
+        <div class="welcome-art" aria-hidden="true">
+          <span class="pixel pixel-one"></span><span class="pixel pixel-two"></span><span class="pixel pixel-three"></span>
+          <span class="art-caption">PLAYER 1<br><strong>READY?</strong></span>
+        </div>
+      </section>
 
-  <h2>Learn as you build</h2>
-  <p>Game development combines design, art, sound, and programming. Pick one small
-     feature to learn at a time and keep notes on what you discover.</p>
+      <section class="path-section" id="learn" aria-labelledby="path-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">Choose your next step</p><h2 id="path-title">Explore the lab</h2></div>
+          <p>Three friendly places to begin.</p>
+        </div>
+        <div class="card-grid">
+          <article class="path-card card-learn">
+            <span class="card-number">01</span><span class="card-icon" aria-hidden="true">◈</span>
+            <h3>Game design</h3><p>Turn a simple idea into a playable plan. Learn about goals, levels, and what makes a game fun.</p>
+            <a href="#resources">Explore design <span class="visually-hidden">resources</span> <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="path-card card-tools" id="tools">
+            <span class="card-number">02</span><span class="card-icon" aria-hidden="true">⌘</span>
+            <h3>Tools</h3><p>Meet approachable engines and creative tools you can use to build your first project.</p>
+            <a href="#resources">Browse tools <span class="visually-hidden">for game development</span> <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="path-card card-guides" id="resources">
+            <span class="card-number">03</span><span class="card-icon" aria-hidden="true">✳</span>
+            <h3>Guides</h3><p>Follow bite-sized tutorials, practice new skills, and keep your momentum going.</p>
+            <a href="#glossary">See beginner guides <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="starter-strip" aria-labelledby="starter-title">
+        <div class="starter-symbol" aria-hidden="true">✦</div>
+        <div><p class="eyebrow">A tiny first quest</p><h2 id="starter-title">Make something small today.</h2><p>Sketch a character, invent a goal, or change one thing in a sample project. Every experiment teaches you something.</p></div>
+        <a class="text-link" href="#about">About the lab <span aria-hidden="true">→</span></a>
+      </section>
+
+      <section class="glossary" id="glossary" aria-labelledby="glossary-title">
+        <div><p class="eyebrow">New words, no pressure</p><h2 id="glossary-title">Quick glossary</h2></div>
+        <dl><div><dt>Game engine</dt><dd>Software that helps you build and run a game.</dd></div><div><dt>Prototype</dt><dd>A quick, simple version used to try out an idea.</dd></div></dl>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer" id="about">
+    <a class="footer-brand" href="#home">Level Up Lab <span aria-hidden="true">↑</span></a>
+    <p>Curiosity is your best controller.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
